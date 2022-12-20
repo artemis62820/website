@@ -1,0 +1,39 @@
+import React from 'react';
+
+const NavigationLinks = [
+  { label: 'Accueil', href: '/Accueil' },
+  { label: 'A propos', href: '/Apropos' },
+  { label: 'Contact', href: '/Contact' }
+];
+
+const Navigation = () => (
+  <nav>
+    <ul>
+      {NavigationLinks.map(link => (
+        <li key={link.href}>
+          <a href={link.href}>{link.label}</a>
+          <link rel="stylesheet" type="text.css" href="style.css">
+
+        </li>
+      ))}
+    </ul>
+  </nav>
+);
+
+const App = () => (
+  <>
+    <header>
+      <h1>Bienvenue sur mon site</h1>
+    </header>
+    <Navigation />
+    <main>
+      <h2>Mon contenu principal</h2>
+      <p>Bienvenue sur mon site web. Vous trouverez ici des informations sur mes projets et mes intérêts.</p>
+    </main>
+    <footer>
+      <p>Copyright 2021 - Tous droits réservés</p>
+    </footer>
+  </>
+);
+
+export default App;

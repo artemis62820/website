@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 18px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav li {
+    width: 100%;
+  }
+}
